@@ -17,11 +17,15 @@ public class StopWatch {
      * Starts a one-minute countdown on this StopWatch object.
      */
     public void countDownOneMin() {
-        for (int i = 0; i < 59; i++) {
+        for (int i = 60; i > 0; i--) {
+            System.out.print("00:");
             try {
-                System.out.println( i);
-                TimeUnit.MILLISECONDS.sleep(100);
 
+                System.out.println(i);
+                TimeUnit.MILLISECONDS.sleep(100);
+                System.out.print("\033[H\033[2J");
+
+                System.out.flush();
             } catch (Exception e) {
                 System.out.println(e.getStackTrace());
             }
@@ -36,7 +40,7 @@ public class StopWatch {
     public void countDownFiveMin() {
         for (int i = 0; i < 599; i++) {
             try {
-                System.out.println( i);
+                System.out.println(i);
                 TimeUnit.MILLISECONDS.sleep(100);
                 System.out.print("\033[H\033[2J");
                 System.out.flush();
@@ -52,15 +56,14 @@ public class StopWatch {
     public void countDownThirtySec() {
         for (int i = 0; i < 29; i++) {
             try {
-                System.out.println( i);
+                System.out.println(i);
                 TimeUnit.MILLISECONDS.sleep(100);
 
             } catch (Exception e) {
                 System.out.println(e.getStackTrace());
             }
         }
-        System.out.print("\033[H\033[2J");
-        System.out.flush();
+
     }
 
 }
