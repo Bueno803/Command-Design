@@ -1,17 +1,15 @@
 package command;
 
 /**
- * The OneMinCommand class is a 'command' that sets the stopwatch to run for
- * one minute when ran
- * Implements Command interface and implements the execute method
+ * The OneMinCommand class which simulates a clock counting down from one minute.
+ * @author Caleb Brunson
  */
 public class OneMinCommand implements Command {
 
     private StopWatch stopWatch;
 
      /**
-     * Constructs new FiveMinCommand object with stopwatch 
-     * 
+     * A OneMinCommand method which constructs an object instance of type StopWatch 
      * @param watch the stopwatch
      */
     public OneMinCommand(StopWatch watch) {

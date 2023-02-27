@@ -10,8 +10,7 @@ public class FiveMinCommand implements Command {
     private StopWatch stopWatch;
 
     /**
-     * Constructs new FiveMinCommand object with stopwatch 
-     * 
+     * A FiveMinCommand method which constructs an object instance of type StopWatch 
      * @param watch the stopwatch
      */
     public FiveMinCommand(StopWatch watch) {
