@@ -8,6 +8,6 @@ public class OneMinCommand implements Command {
 
     @Override
     public void execute() {
-
+        stopWatch.countDownOneMin();
     }
 }
