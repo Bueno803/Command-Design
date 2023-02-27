@@ -1,5 +1,3 @@
-package command;
-
 /**
  * The ThirtySecCommand class is a 'command' that sets the stopwatch to run for
  * thirty seconds when ran

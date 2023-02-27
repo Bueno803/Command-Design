@@ -1,5 +1,3 @@
-package command;
-
 /**
  * The FiveMinCommand class is a 'command' that sets the stopwatch to run for
  * five minutes when ran

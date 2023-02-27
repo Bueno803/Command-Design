@@ -1,5 +1,3 @@
-package command;
-
 /**
  * The OneMinCommand class which simulates a clock counting down from one minute.
  * @author Caleb Brunson

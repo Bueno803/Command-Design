@@ -1,5 +1,3 @@
-package command;
-
 import java.util.HashMap; // import the HashMap class
 
 /**
