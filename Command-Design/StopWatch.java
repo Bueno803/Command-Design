@@ -19,6 +19,7 @@ public class StopWatch {
     public void countDownOneMin() {
         for (int i = 0; i < 59; i++) {
             try {
+                System.out.println( i);
                 TimeUnit.MILLISECONDS.sleep(100);
 
             } catch (Exception e) {
@@ -35,6 +36,7 @@ public class StopWatch {
     public void countDownFiveMin() {
         for (int i = 0; i < 599; i++) {
             try {
+                System.out.println( i);
                 TimeUnit.MILLISECONDS.sleep(100);
                 System.out.print("\033[H\033[2J");
                 System.out.flush();
@@ -50,6 +52,7 @@ public class StopWatch {
     public void countDownThirtySec() {
         for (int i = 0; i < 29; i++) {
             try {
+                System.out.println( i);
                 TimeUnit.MILLISECONDS.sleep(100);
 
             } catch (Exception e) {

@@ -13,6 +13,7 @@ public class FiveMinCommand implements Command {
      */
     public FiveMinCommand(StopWatch watch) {
         this.stopWatch = watch;
+        
     }
 
     /**
