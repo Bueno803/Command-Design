@@ -33,6 +33,7 @@ public class InputHandler {
      */
     public boolean inputEntered(String data) {
         if (commands.containsKey(data)) {
+            commands.get(data).execute();
             return true;
         }
         return false;

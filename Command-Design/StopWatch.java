@@ -1,6 +1,5 @@
 import java.util.concurrent.TimeUnit;
 
-
 /**
  * The StopWatch class provides a simple stopwatch that can be used to time
  * different intervals
@@ -11,7 +10,7 @@ public class StopWatch {
      * Constructs new StopWatch object
      */
     public StopWatch() {
-        
+
     }
 
     /**
@@ -21,12 +20,13 @@ public class StopWatch {
         for (int i = 0; i < 59; i++) {
             try {
                 TimeUnit.MILLISECONDS.sleep(100);
-                System.out.print("\033[H\033[2J");
-                System.out.flush();
+
             } catch (Exception e) {
-                System.out.println(e.getStackTrace()); 
+                System.out.println(e.getStackTrace());
             }
         }
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
     }
 
     /**
@@ -39,7 +39,7 @@ public class StopWatch {
                 System.out.print("\033[H\033[2J");
                 System.out.flush();
             } catch (Exception e) {
-                System.out.println(e.getStackTrace()); 
+                System.out.println(e.getStackTrace());
             }
         }
     }
@@ -51,13 +51,13 @@ public class StopWatch {
         for (int i = 0; i < 29; i++) {
             try {
                 TimeUnit.MILLISECONDS.sleep(100);
-                System.out.print("\033[H\033[2J");
-                System.out.flush();
+
             } catch (Exception e) {
-                System.out.println(e.getStackTrace()); 
+                System.out.println(e.getStackTrace());
             }
         }
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
     }
-
 
 }
