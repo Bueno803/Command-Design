@@ -20,12 +20,10 @@ public class StopWatch {
         for (int i = 60; i > 0; i--) {
             System.out.print("00:");
             try {
-
-                System.out.println(i);
-                TimeUnit.MILLISECONDS.sleep(100);
                 System.out.print("\033[H\033[2J");
-
                 System.out.flush();
+                System.out.println(i);
+                TimeUnit.MILLISECONDS.sleep(1000);
             } catch (Exception e) {
                 System.out.println(e.getStackTrace());
             }
@@ -38,12 +36,12 @@ public class StopWatch {
      * Starts a five-minute countdown on this StopWatch object.
      */
     public void countDownFiveMin() {
-        for (int i = 0; i < 599; i++) {
+        for (int i = 600; i > 0; i--) {
             try {
-                System.out.println(i);
-                TimeUnit.MILLISECONDS.sleep(100);
                 System.out.print("\033[H\033[2J");
                 System.out.flush();
+                System.out.println(i);
+                TimeUnit.MILLISECONDS.sleep(1000);
             } catch (Exception e) {
                 System.out.println(e.getStackTrace());
             }
@@ -54,11 +52,12 @@ public class StopWatch {
      * Starts a thirty-second countdown on this StopWatch object.
      */
     public void countDownThirtySec() {
-        for (int i = 0; i < 29; i++) {
+        for (int i = 30; i > 0; i--) {
             try {
+                System.out.print("\033[H\033[2J");
+                System.out.flush();
                 System.out.println(i);
-                TimeUnit.MILLISECONDS.sleep(100);
-
+                TimeUnit.MILLISECONDS.sleep(1000);
             } catch (Exception e) {
                 System.out.println(e.getStackTrace());
             }
